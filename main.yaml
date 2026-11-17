@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: all
+  hosts: allInstance
   become: yes
   tasks:
   - name: ping the server
