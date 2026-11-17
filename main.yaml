@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: all
+  hosts: roboshop-*
   become: yes
   serial: 8
   tasks:
