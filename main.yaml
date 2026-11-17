@@ -2,5 +2,7 @@
   hosts: allInstance
   become: yes
   tasks:
-  - name: ping the server
-    ping:
+  - name: installing nginx in all servers
+    dnf:
+      name: nginx
+      state: present
