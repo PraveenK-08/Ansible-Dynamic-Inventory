@@ -1,8 +1,9 @@
 - name: ping the server
   hosts: allInstance
   become: yes
+  serial: 3
   tasks:
   - name: installing nginx in all servers
     dnf:
       name: nginx
-      state: present
+      state: absent
