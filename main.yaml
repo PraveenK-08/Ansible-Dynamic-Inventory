@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: roboshop-*
+  hosts: roboshop-mongodb
   become: yes
   serial: 8
   tasks:
